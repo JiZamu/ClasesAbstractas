@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package clasesabstractas;
 
-/**
- *
- * @author eduardo
- */
-public class Cuadrado {
+public class Cuadrado extends FigurasGeometricas{
+    double longitud;
     
+    public Cuadrado(double longitud){
+        super("Cuadrado");
+        this.longitud = longitud;
+    }
+
+    @Override
+    public double area(){
+        return Math.PI*longitud;
+    } 
 }

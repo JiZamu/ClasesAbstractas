@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package clasesabstractas;
 
-/**
- *
- * @author eduardo
- */
-public class Circulo {
+public class Circulo extends FigurasGeometricas{
+    double radio;
     
+    public Circulo(double radio){
+        super("Circulo");
+        this.radio = radio;
+    }
+    
+    @Override
+    public double area(){
+        return Math.PI*radio;
+    }
 }
